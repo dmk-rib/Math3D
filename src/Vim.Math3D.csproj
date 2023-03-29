@@ -19,7 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -35,10 +35,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>MathOps.cs</LastGenOutput>
     </Content>
-    <Content Include="Structs.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Structs.cs</LastGenOutput>
-    </Content>
     <Content Include="TemplateHelpers.tt">
       <LastGenOutput>TemplateHelpers1.cs</LastGenOutput>
     </Content>
@@ -53,11 +49,6 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>MathOps.tt</DependentUpon>
-    </Compile>
-    <Compile Update="Structs.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Structs.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   
